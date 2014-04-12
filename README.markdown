@@ -1,6 +1,6 @@
 # debmeo: [oEmbed](http://oembed.com) for Python
 
-This is yet another Python oEmbed library - but for [Python Twisted](http://twistedmatrix.com).
+This is yet another [Python oEmbed library](https://pypi.python.org/pypi?%3Aaction=search&term=oembed&submit=search) - but for [Python Twisted](http://twistedmatrix.com).
 
 There is no caching of oembed URLs for services, only discovery is supported.  This means no list of URLs needs to be kept up to date.
 
