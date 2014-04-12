@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 from rpcudp import version
 
 setup(
-    name="rpcudp",
+    name="debmeo",
     version=version,
     description="Get oEmbed info asynchronously",
     author="Brian Muller",
