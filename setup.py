@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
-from rpcudp import version
+from debmeo import version
 
 setup(
     name="debmeo",
