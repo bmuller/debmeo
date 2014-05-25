@@ -11,6 +11,6 @@ setup(
     license="MIT",
     url="http://github.com/bmuller/debmeo",
     packages=find_packages(),
-    requires=["twisted.internet", "bs4"],
-    install_requires=['twisted>=12.0', "beautifulsoup4>=4.3.0"]
+    requires=["twisted.internet", "bs4", "treq"],
+    install_requires=['twisted>=12.0', "beautifulsoup4>=4.3.0", "treq>=0.2.1"]
 )
