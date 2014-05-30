@@ -23,12 +23,20 @@ class Fetcher(object):
             result[name] = kid.text
         return result
 
+    def parse_json(self, json):
+        result = None
+        try:
+            result = json.loads(json)
+        except:
+            pass
+        return result
+
     def extract_link(self, response):
         soup = BeautifulSoup(response.body)
         types = ('application/json+oembed', 'text/xml+oembed')
         link = soup.find('link', type=types, href=True)
         if link and link['type'] == 'application/json+oembed':
-            parser = json.loads
+            parser = self.parse_json
         elif link:
             parser = self.parse_xml
         else:
