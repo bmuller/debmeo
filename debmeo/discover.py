@@ -23,10 +23,10 @@ class Fetcher(object):
             result[name] = kid.text
         return result
 
-    def parse_json(self, json):
+    def parse_json(self, jsonstr):
         result = None
         try:
-            result = json.loads(json)
+            result = json.loads(jsonstr)
         except:
             pass
         return result
