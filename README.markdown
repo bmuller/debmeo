@@ -31,17 +31,17 @@ which will poop out:
 
 ```python
 {
-    u'provider_url': u'https://twitter.com',
-    u'url': u'https://twitter.com/bmuller/statuses/436965622082068481',
-    u'html': u'<blockquote class="twitter-tweet"><p>&quot;So You Think You Found a Technical Co-founder&quot; - a list of questions to ask yourself and them - <a href="http://t.co/ALixRKwk8e">http://t.co/ALixRKwk8e</a></p>&mdash; bmuller (@bmuller) <a href="https://twitter.com/bmuller/statuses/436965622082068481">February 21, 2014</a></blockquote>\n<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>',
-    u'author_name': u'bmuller',
-    u'height': None,
-    u'width': 550,
-    u'version': u'1.0',
-    u'author_url': u'https://twitter.com/bmuller',
-    u'provider_name': u'Twitter',
-    u'cache_age': u'3153600000',
-    u'type': u'rich'
+    'provider_url': 'https://twitter.com',
+    'url': 'https://twitter.com/bmuller/statuses/436965622082068481',
+    'html': '<blockquote class="twitter-tweet"><p>&quot;So You Think You Found a Technical Co-founder&quot; - a list of questions to ask yourself and them - <a href="http://t.co/ALixRKwk8e">http://t.co/ALixRKwk8e</a></p>&mdash; bmuller (@bmuller) <a href="https://twitter.com/bmuller/statuses/436965622082068481">February 21, 2014</a></blockquote>\n<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>',
+    'author_name': 'bmuller',
+    'height': None,
+    'width': 550,
+    'version': '1.0',
+    'author_url': 'https://twitter.com/bmuller',
+    'provider_name': 'Twitter',
+    'cache_age': '3153600000',
+    'type': 'rich'
 }
 ```
 
