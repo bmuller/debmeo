@@ -1,9 +1,9 @@
-# debmeo: [oEmbed](http://oembed.com) for Python [![travis][travis-image]][travis-url]
+# debmeo: [oEmbed](http://oembed.com) for Python 3 [![travis][travis-image]][travis-url]
 
 [travis-image]: https://img.shields.io/travis/bmuller/debmeo/master.svg
 [travis-url]: https://travis-ci.org/bmuller/debmeo
 
-This is yet another [Python oEmbed library](https://pypi.python.org/pypi?%3Aaction=search&term=oembed&submit=search) - but for Python.
+This is yet another [Python oEmbed library](https://pypi.python.org/pypi?%3Aaction=search&term=oembed&submit=search) - but for Python 3 asyncio.
 
 There is no caching of oembed URLs for services, only discovery is supported.  This means no list of URLs needs to be kept up to date.
 
