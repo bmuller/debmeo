@@ -24,8 +24,15 @@ def _parse_json(jsonstr):
 
 
 async def get_embed(url):
+    """
+    Get the oembed properties for a given URL.
+    """
     page = await io.get_page(url)
-    if page is None:
+    return await get_embed_from_content(page)
+
+
+async def get_embed_from_content(page):
+    if page is None or len(page) < 10:
         return None
     soup = BeautifulSoup(page, "html.parser")
     types = ('application/json+oembed', 'text/xml+oembed')
