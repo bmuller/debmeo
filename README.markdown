@@ -1,30 +1,30 @@
-# debmeo: [oEmbed](http://oembed.com) for Python
+# debmeo: [oEmbed](http://oembed.com) for Python [![travis][travis-image]][travis-url]
 
-This is yet another [Python oEmbed library](https://pypi.python.org/pypi?%3Aaction=search&term=oembed&submit=search) - but for [Python Twisted](http://twistedmatrix.com).
+[travis-image]: https://img.shields.io/travis/bmuller/debmeo/master.svg
+[travis-url]: https://travis-ci.org/bmuller/debmeo
+
+This is yet another [Python oEmbed library](https://pypi.python.org/pypi?%3Aaction=search&term=oembed&submit=search) - but for Python.
 
 There is no caching of oembed URLs for services, only discovery is supported.  This means no list of URLs needs to be kept up to date.
 
 ## Installation
 
-```
-easy_install debmeo
+```shell
+pip install debmeo
 ```
 
 ## Usage
-*This assumes you have a working familiarity with Twisted.*
 
 Usage is pretty dang simple.
 
 ```python
-from twisted.internet import reactor
+import asyncio
 from debmeo.discover import get_embed
 
-def p(r):
-    print r
-    reactor.stop()
-
-get_embed("https://twitter.com/bmuller/status/436965622082068481").addCallback(p)
-reactor.run()
+loop = asyncio.get_event_loop()
+url = "https://twitter.com/bmuller/status/436965622082068481"
+result = loop.run_until_complete(get_embed(url))
+print(result)
 ```
 
 which will poop out:
